@@ -1,0 +1,119 @@
+/* Responsive styles */
+/* These styles supplement the responsive adjustments in layout.css */
+
+@media (max-width: 1280px) {
+  .article-title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .articles-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .site-header .container {
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+  }
+}
+
+@media (max-width: 768px) {
+  /* Mobile navigation */
+  .nav-toggle {
+    display: flex;
+    z-index: 20;
+  }
+  
+  .site-header .container {
+    padding-left: var(--space-2);
+    padding-right: var(--space-2);
+  }
+  
+  .main-nav {
+    height: 70px;
+  }
+  
+  .article-hero {
+    text-align: center;
+  }
+  
+  .article-meta {
+    justify-content: center;
+  }
+  
+  .article-title {
+    font-size: 2.5rem;
+  }
+  
+  .article-author {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+  }
+  
+  /* Adjust sidebar */
+  .article-sidebar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-4);
+  }
+  
+  .article-author, .article-share, .table-of-contents {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  /* Smaller article image on mobile */
+  .article-image img {
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 480px) {
+  .article-title {
+    font-size: 2rem;
+  }
+  
+  .article-subtitle {
+    font-size: 1rem;
+  }
+  
+  .article-hero {
+    min-height: auto;
+    padding: var(--space-8) 0 var(--space-6);
+  }
+  
+  .article-meta {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-1);
+  }
+  
+  .article-sidebar {
+    flex-direction: column;
+  }
+  
+  .article-quote {
+    font-size: 1.125rem;
+    padding: var(--space-3);
+  }
+  
+  .article-section h2 {
+    font-size: 1.5rem;
+  }
+  
+  .article-section h3 {
+    font-size: 1.25rem;
+  }
+  
+  .main-nav {
+    height: 60px;
+  }
+  
+  .article {
+    margin-top: 60px;
+  }
+}
